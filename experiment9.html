@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Responsive Product Grid</title>
+ <style>
+    
+ body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ background: #f5f5f5;
+ padding: 20px;
+ }
+ h2 {
+ text-align: center;
+ margin-bottom: 20px;
+ }
+ .grid {
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ gap: 20px;
+ }
+ .card {
+ background: #fff;
+ border-radius: 8px;
+ box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+ padding: 16px;
+ text-align: center;
+ }
+ .card img {
+  width: 100%;
+  height: 200px;        
+  object-fit: contain;  
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+ .card h3 {
+ font-size: 18px;
+ margin: 8px 0;
+ }
+ .card p {
+ font-size: 14px;
+ color: #555;
+ margin: 4px 0;
+ }
+ .price {
+ font-weight: bold;
+ color: #007bff;
+ }
+ @media (max-width: 1024px) {
+ .grid {
+ grid-template-columns: repeat(2, 1fr);
+ }
+ }
+ @media (max-width: 600px) {
+ .grid {
+ grid-template-columns: 1fr;
+ }
+ }
+ </style>
+</head>
+<body>
+ <h2>Responsive Product Showcase</h2>
+
+
+
+ <div class="grid">
+ <div class="card">
+ <img src="https://m.media-amazon.com/images/I/711l4y8aNlL._SX522_.jpg" alt="Wireless Headphones">
+ <h3>Wireless Headphones</h3>
+ <p>Noise-cancelling with long battery life.</p>
+ <p class="price">₹2,499</p>
+ </div>
+
+ <div class="card">
+ <img src="https://m.media-amazon.com/images/I/418tFshxkJL._SY300_SX300_QL70_FMwebp_.jpg" alt="Smart Watch">
+ <h3>Smart Watch</h3>
+ <p>Track fitness and stay connected.</p>
+ <p class="price">₹3,999</p>
+ </div>
+
+ <div class="card">
+ <img src="https://m.media-amazon.com/images/I/41b77upnZFL._SY300_SX300_QL70_FMwebp_.jpg" alt="Bluetooth Speaker">
+ <h3>Bluetooth Speaker</h3>
+ <p>Powerful sound in a compact design.</p>
+ <p class="price">₹1,799</p>
+ </div>
+
+ <div class="card">
+ <img src="https://m.media-amazon.com/images/I/41BbFDMMxVS._SY300_SX300_QL70_FMwebp_.jpg" alt="Gaming Mouse">
+ <h3>Gaming Mouse</h3>
+ <p>High precision with RGB lighting.</p>
+ <p class="price">₹1,299</p>
+ </div>
+ </div>
+
+</body>
+</html>
