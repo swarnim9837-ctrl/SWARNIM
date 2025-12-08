@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Student Profile Card</title>
+ <style>
+ body{
+ font-family: Arial, sans-serif;
+ margin: 20px;
+ background: #f9f9f9;
+ }
+ h2{text-align: center;}
+ .container{
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ gap: 20px;
+ flex-wrap: wrap;
+ }
+ .card{
+ background: #fff;
+ border-radius: 8px;
+ box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+ width: 220px;
+ text-align: center;
+ padding: 16px;
+ }
+ .avatar{
+ width: 70px; height: 70px;
+ background: #bc136e; color: #fff;
+ border-radius: 50%;
+ display: flex; justify-content: center; align-items: center;
+ font-size: 20px; margin: 0 auto 12px;
+ }
+ .name{ font-weight: bold; font-size: 18px; }
+ .detail{ font-size: 14px; color: #555; margin: 2px 0; }
+ </style>
+</head>
+<body>
+
+ <div class="container">
+
+ <div class="card">
+ <div class="avatar">TP</div>
+ <div class="name">Tina Panday</div>
+ <div class="detail">B.Tech - CSE</div>
+ <div class="detail">Roll No: 22CS1054</div>
+ <div class="detail">2nd Year</div>
+ </div>
+
+ <div class="card">
+ <div class="avatar">AM</div>
+ <div class="name">Amit Mishra</div>
+ <div class="detail">B.Tech - ME</div>
+ <div class="detail">Roll No: 22ME1032</div>
+ <div class="detail">2nd Year</div>
+ </div>
+
+ <div class="card">
+ <div class="avatar">NS</div>
+ <div class="name">Neha Singh</div>
+ <div class="detail">B.Tech - CE</div>
+ <div class="detail">Roll No: 22CE1018</div>
+ <div class="detail">2nd Year</div>
+ </div>
+
+ </div>
+</body>
+</html>
